@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Elektronik | Power Bank UGREEN</title>
+    <style>
+        /* ... Gaya CSS Anda sebelumnya (dihilangkan untuk fokus pada HTML) ... */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            padding: 40px 20px 20px;
+            background-color: #fff;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #007bff;
+        }
+        .search-container {
+            max-width: 600px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .search-input {
+            width: 100%;
+            padding: 12px 20px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+        .product-grid-heading {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 1.5em;
+            color: #555;
+        }
+        .product-grid {
+            display: flex; 
+            justify-content: center;
+            gap: 25px;
+            padding: 20px;
+            flex-wrap: wrap; 
+        }
+        .product-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            width: 220px; 
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .product-card img {
+            width: 90%;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .product-card h3 {
+            font-size: 1.1em;
+            margin: 5px 0;
+        }
+        .product-card .price {
+            font-size: 1.3em;
+            color: #dc3545; 
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .buy-btn {
+            background-color: #28a745; 
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .buy-btn:hover {
+            background-color: #218838;
+        }
+        .badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ffc107;
+            color: #333;
+            padding: 5px 10px;
+            font-size: 0.8em;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        .featured-card {
+            position: absolute; 
+            top: 20px;
+            left: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+        }
+        .featured-card img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+        }
+        .featured-card .price {
+             font-size: 1.2em;
+            color: #dc3545;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="featured-card">
+        <img src="PB.png" alt="UGREEN Power Bank 10.000mAh">
+        <h3>UGREEN 10.000mAh</h3>
+        <p class="price">Rp 199.000</p>
+        <a href="#" class="buy-btn" onclick="return confirm('Apakah Anda Yakin Ingin Membeli Power Bank ini?');">Beli Sekarang</a>
+    </div>
+
+    <div class="header">
+        <h1>Toko Aksesori Gadget</h1>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" placeholder="🔍 Cari Power Bank Berdasarkan Kapasitas...">
+        </div>
+        <div class="search-container" style="margin-top: 5px;">
+            <input type="text" class="search-input" placeholder="🔍 Cari Aksesori Lain...">
+        </div>
+    </div>
+    
+    <h2 class="product-grid-heading">Rekomendasi Power Bank UGREEN</h2>
+    
+    <div class="product-grid">
+        
+        <div class="product-card">
+            <div class="badge">BEST SELLER</div>
+            <img src="pb-20k-pd.jpg" alt="UGREEN Power Bank 20.000mAh">
+            <h3>UGREEN Power Bank 20.000mAh</h3>
+            <p style="font-size: 0.9em; color: #6c757d;">30W Power Delivery (PD)</p>
+            <p class="price">Rp 349.000</p>
+            <a href="#" class="buy-btn" onclick="return confirm('Apakah Anda Yakin Ingin Membeli Power Bank ini?');">Beli Sekarang</a>
+        </div>
+        
+        <div class="product-card">
+            <img src="pb-built-in-c.jpg" alt="UGREEN Built-in Cable Type C">
+            <h3>UGREEN Built-in Type C</h3>
+            <p style="font-size: 0.9em; color: #6c757d;">Kabel Tanam 10.000mAh</p>
+            <p class="price">Rp 245.000</p>
+            <a href="#" class="buy-btn" onclick="return confirm('Apakah Anda Yakin Ingin Membeli Power Bank ini?');">Beli Sekarang</a>
+        </div>
+        
+        <div class="product-card">
+            <img src="pb-wireless.jpg" alt="UGREEN Wireless Charging">
+            <h3>UGREEN Wireless Charging</h3>
+            <p style="font-size: 0.9em; color: #6c757d;">15W Max | 10.000mAh</p>
+            <p class="price">Rp 299.000</p>
+            <a href="#" class="buy-btn" onclick="return confirm('Apakah Anda Yakin Ingin Membeli Power Bank ini?');">Beli Sekarang</a>
+        </div>
+        
+    </div>
+
+</body>
+</html>
